@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devdeeds.firebaseauth">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firebase_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme">
+        <activity
+            android:name="com.devdeeds.firebaseauth.LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.devdeeds.firebaseauth.LoginFace"
+            android:label="Login with Face Id" />
+        <activity
+            android:name="com.devdeeds.firebaseauth.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name="com.devdeeds.firebaseauth.HomeActivity"
+            android:label="@string/title_activity_home" />
+    </application>
+
+</manifest>
